@@ -1,0 +1,52 @@
+/* button{
+    color: white;
+    background: blue;
+    padding: 10px;
+} */
+
+body {
+    background-color: #f1caf7;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 250;
+    color: #d500f9;
+}
+
+
+p {
+    color:#455a64;
+}
+
+
+blockquote {
+    color:#455a64;
+    border-left: 8px solid #d500f9;
+}
+
+
+.menu {
+    padding-top: 25px;
+}
+
+
+
+/* border-left: 5px solid #ee6e73;} */
+
+nav ul a {
+    color: #840084;
+    font-size: 1.09rem;
+}
+
+.dropdown-content {
+    background-color: #9fa8da;
+}
+
+.dropdown-content li>a, .dropdown-content {
+    color: #840084;
+}
+
+.section-following-content {
+    padding: 25px;
+}

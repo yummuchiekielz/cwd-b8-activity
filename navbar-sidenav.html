@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/08c3f74e03.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="light-green accent-3">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo purple-text">
+                        <i class="fa-solid fa-cat"> Purple Cat</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+        <h1 class="center">
+            <div class="container">
+                <i class="fa-solid fa-bars small left menu hide-on-large-only"></i>
+                Navbar
+            </div>
+    </div>
+    </h1>
+    <div class="divider purple"></div>
+    <div class="container">
+        <br>
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <br><br>
+        <!-- Right Aligned Links -->
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        <nav class="purple lighten-3">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo purple-text">
+                        <i class="fa-solid fa-paw"> Purple Paws</i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+        <!-- Left Aligned Links -->
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+        <nav class="light-blue lighten-3">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo purple-text right">
+                        <i class="fa-solid fa-bone"> Purple Bone</i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+        <!-- Centering the logo -->
+        <h3>Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo">. You will have to make sure yourself that links do not overlap if you use this.</p>
+            <nav class="cyan lighten-1">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="" class="brand-logo purple-text center">
+                            <i class="fa-solid fa-cat"> Purple Cat</i>
+                        </a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <br><br>
+            <!-- Fixed Navbar -->
+            <h3>Fixed Navbar</h3>
+            <p>To make the navbar fixed, you have to add an outer wrapping div with the class navbar-fixed. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.
+            </p>
+            <nav class="black">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="" class="brand-logo purple-text right">
+                            <i class="fa-solid fa-cat"> Purple Cat</i>
+                        </a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+
+            <br><br><br>
+            <!-- Navbar Dropdown Menu -->
+            <h3>Navbar Dropdown Menu</h3>
+            <p>
+                To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.
+            </p>
+            <!-- Dropdown Structure -->
+            <ul id="dropdown1" class="dropdown-content">
+                <li>
+                    <a href="">Groom</a>
+                </li>
+                <li>
+                    <a href="">Food</a>
+                </li>
+                <li>
+                    <a href="">Hotel</a>
+                </li>
+            </ul>
+
+            <nav class="indigo lighten-2">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a href="" class="brand-logo purple-text">
+                            <i class="fa-solid fa-cat"> Purple Cat</i>
+                        </a>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <!-- Dropdown Trigger -->
+                        <li>
+                            <a class="dropdown-trigger" href="" data-target="dropdown1">More <i class="fa-solid fa-circle-chevron-down tiny"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br><br>
+            <!-- Icon Links -->
+            <h3>Icon Links</h3>
+            <p>
+                You can add icons into links. For icon only links you don't need any additional class. Just pop the i tag in and it will work.
+            </p>
+        <nav class="yellow accent-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo purple-text right">
+                        <i class="fa-solid fa-cat"> Purple Cat</i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a href="media-materialization.html"><i class="fa-solid fa-circle-question"></i></a>
+                        </li>
+                        <li>
+                            <a href="table-media.html"><i class="fa-solid fa-square-phone"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br><br>
+        <!-- Extended Navbar with Tabs -->
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+        <nav class="nav-extended blue-grey darken-4">
+           <div class="nav-wrapper">
+            <a href="" class="brand-logo center"><i class="fa-brands fa-codepen"></i>
+                <a href="#" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </a>
+           </div>
+           <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a href="#following">Following</a>
+                </li>
+                <li class="tab">
+                    <a href="#trending">Trending</a>
+                </li>
+                <li class="tab">
+                    <a href="">Your Work</a>
+                </li>
+            </ul>
+           </div>
+        </nav>
+
+        <!-- Tabs Structure -->
+        <div class="row blue-grey darken-4">
+            <!-- Following -->
+            <div class="col s12" id="following">
+                <div class="card-panel blue-grey darken-3">
+                  <!-- Switches -->
+                  <div class="switch">
+                    <label>
+                      Recent
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Top
+                    </label>
+                  </div>
+                </div>
+                <section class="section section-following-content">
+                    <div class="container">
+                        <h6 class="center white-text">
+                            You aren't following anyone yet! Maybe you could find some people to follow in <span class="light-blue-text">Trending</span>?
+                        </h6>
+                    </div>
+                </section>
+            </div>
+            <!-- Trending -->
+            <div class="col s12" id="trending">
+                <section class="section">
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="card blue-grey darken-3">
+                                <div class="card-image">
+                                    <img src="Images/img-1.jpg" alt="" class="materialboxed">
+                                </div>
+                                <div class="card-content">
+                                    <i class="fa-brands fa-discord small white-text left"></i>
+                                    <span class="white-text">A very cute and lovely cat<i class="material-icons right">more_vert</i></span>
+                                    <p class="white-text">Ashie the Great</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="card blue-grey darken-3">
+                                <div class="card-image">
+                                    <img src="Images/img-2.jpg" alt="" class="materialboxed">
+                                </div>
+                                <div class="card-content">
+                                    <i class="fa-brands fa-discord small white-text left"></i>
+                                    <span class="white-text">A very cute and lovely cat<i class="material-icons right">more_vert</i></span>
+                                    <p class="white-text">Ashie the Great</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+
+        <!-- Sidenav Structure -->
+        <ul class="sidenav blue-grey darken-4" id="mobile-demo">
+            <li>
+                <a href="">
+                    <h5 class="center white-text">CODEPEN <i class="fa-brands fa-codepen"></i>
+                    </h5>
+                </a>
+            </li>
+            <li>
+                <div class="progress">
+                    <div class="determinate" style="width: 100%"></div>
+                </div>
+                <div class="card-panel blue-grey darken-3">
+                    <a href="">
+                        <h6 class="white-text">
+                            <span class="text-blue-grey darken-2">
+                                <i class="fa-solid fa-calendar"></i>
+                            </span>
+                            Pen <i class="fa-solid fa-caret-down right"></i>
+                        </h6>
+                    </a>
+                </div>
+                <div class="card-panel blue-grey darken-3">
+                    <a href="">
+                        <h6 class="white-text">
+                            <span class="text-blue-grey darken-2">
+                                <i class="fa-solid fa-table-cells-large"></i>
+                            </span>
+                            Collection
+                        </h6>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="" class="white-text">Your Work</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Activity</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Assets</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Pinned Items</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Following</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Trending</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Challenges</a>
+            </li>
+            <li>
+                <a href="" class="white-text">Spark</a>
+            </li>
+            <li>
+                <a href="" class="white-text">CodePen
+                    <i class="fa-brands fa-codepen right 
+                    yellow-text"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div style="height: 500px;"></div>
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <script>
+        $(".dropdown-trigger").dropdown(
+            {hover: true}
+        );
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            // Sidenav init
+            $('.sidenav').sidenav();
+            // Tabs Init
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+</html>
